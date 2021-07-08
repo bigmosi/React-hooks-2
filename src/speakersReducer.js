@@ -1,4 +1,4 @@
-function speakerReducer(state, action) {
+function speakersReducer(state, action) {
     function updateFavorite(favoriteValue) {
       return state.map((item, index) => {
         if (item.id === action.sessionId) {
@@ -20,4 +20,4 @@ function speakerReducer(state, action) {
     }
   }
 
-  export default speakerReducer;
+  export default speakersReducer;
